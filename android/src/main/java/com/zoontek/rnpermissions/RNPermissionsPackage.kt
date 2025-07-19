@@ -17,7 +17,7 @@ class RNPermissionsPackage : TurboReactPackage() {
   override fun getReactModuleInfoProvider(): ReactModuleInfoProvider {
     return ReactModuleInfoProvider {
       val moduleInfos: MutableMap<String, ReactModuleInfo> = HashMap()
-      val isTurboModule = BuildConfig.IS_NEW_ARCHITECTURE_ENABLED
+      val isTurboModule = false
 
       val moduleInfo = ReactModuleInfo(
         RNPermissionsModuleImpl.NAME,
